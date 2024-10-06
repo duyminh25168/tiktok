@@ -1,0 +1,21 @@
+.menu {
+    max-width: 400px;
+    font-size: 1.6rem;
+    .list {
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        .item {
+            width: 100%;
+            font-weight: 550;
+            justify-content: start;
+            margin: 0;
+            border-radius: none;
+            &:hover {
+                border-radius: 0;
+                text-decoration: none;
+                background-color: rgba(22, 24, 35, 0.03);
+            }
+        }
+    }
+}
