@@ -4,9 +4,10 @@ import Button from "~/components/Button";
 
 const cx = classNames.bind(stype);
 
-function Item({ data }) {
+function Item({ data, onclick}) {
+    const className = cx("item",{separeat: data.separeat});
     return (
-        <Button leftIcon={data.icon} text className={cx("item")} to={data.to}>
+        <Button leftIcon={data.icon} text className={className} to={data.to} onClick={onclick}>
             {data.title}
         </Button>
     );
